@@ -1,0 +1,18 @@
+libraries used:
+    - express: Simplifies the process of creating server-side applications by providing a robust set of features and utilities.
+    - googleapis: API by Google that allow developers to interact with various Google services and access their functionalities
+    - dotenv: simplifies the process of loading environment variables from a file ( .env )
+
+technology used: 
+    - node.js: Runtime environment for executing JavaScript code outside of a web browser.
+
+
+area of improvement: 
+    - Problem: If the client has multiple emails then our app going to run for each of them.
+    - Possible Solution: We can put several API calls into a single HTTP request and then send it to the google server.
+
+    - Problem: We need some data amongst the large amount of data ie., headers, messageId, threadId etc. which cause our app slow.
+    - Possible Solution: Google API provide us the way to pass the fields that are only required. which will makes our API faster as well as it'll take less bandwidth.
+
+    - Problem: Google give us 2 access_type ie,. offline, online;
+    - Possible Solution: We must be careful here that what should we provide, so that our client feels seamless experience and what will make his trust on us.
